@@ -123,7 +123,7 @@ nav .nav-links a.active {
   inset: 0;
   background-size: cover;
   background-position: center;
-  filter: brightness(0.5);
+  filter: brightness(0.15) blur(2px);
 }
 
 .hero-content {
