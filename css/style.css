@@ -5,37 +5,22 @@
 }
 
 body {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   color: #333;
   background: #fff;
   line-height: 1.6;
+  font-size: 12pt;
 }
 
 nav {
-  background: #fff;
-  border-bottom: 1px solid #e0e0e0;
+  background: #1976d2;
   padding: 0 2rem;
   display: flex;
   align-items: center;
-  height: 64px;
+  height: 52px;
   position: sticky;
   top: 0;
   z-index: 100;
-}
-
-nav .logo {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  text-decoration: none;
-  color: #1a73e8;
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin-right: 2rem;
-}
-
-nav .logo img {
-  height: 32px;
 }
 
 nav .nav-links {
@@ -44,6 +29,8 @@ nav .nav-links {
   list-style: none;
   height: 100%;
   align-items: center;
+  width: 100%;
+  justify-content: center;
 }
 
 nav .nav-links li {
@@ -54,62 +41,27 @@ nav .nav-links li {
 
 nav .nav-links a {
   text-decoration: none;
-  color: #444;
-  font-size: 0.9rem;
+  color: rgba(255,255,255,0.85);
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 0.85rem;
   padding: 0 1rem;
   height: 100%;
   display: flex;
   align-items: center;
   border-bottom: 3px solid transparent;
   transition: border-color 0.2s, color 0.2s;
+  white-space: nowrap;
 }
 
 nav .nav-links a:hover,
 nav .nav-links a.active {
-  color: #1a73e8;
-  border-bottom-color: #1a73e8;
-}
-
-.dropdown {
-  position: relative;
-}
-
-.dropdown > a::after {
-  content: ' \25BE';
-  font-size: 0.7rem;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  border-radius: 4px;
-  min-width: 200px;
-  z-index: 200;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content a {
-  padding: 0.6rem 1rem;
-  display: block;
-  height: auto;
-  border-bottom: none;
-  font-size: 0.85rem;
-}
-
-.dropdown-content a:hover {
-  background: #f5f5f5;
+  color: #fff;
+  border-bottom-color: #fff;
 }
 
 .hero {
   position: relative;
-  height: 400px;
+  height: 360px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,7 +75,7 @@ nav .nav-links a.active {
   inset: 0;
   background-size: cover;
   background-position: center;
-  filter: brightness(1);
+  filter: brightness(0.6);
 }
 
 .hero-content {
@@ -134,13 +86,16 @@ nav .nav-links a.active {
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 2.8rem;
   font-weight: 700;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
   line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .hero p {
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 1.1rem;
   margin-top: 0.5rem;
   opacity: 0.9;
@@ -153,18 +108,26 @@ nav .nav-links a.active {
 }
 
 .content h2 {
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 1.3rem;
-  color: #1a73e8;
+  color: #1976d2;
   margin-bottom: 1rem;
-  border-left: 4px solid #1a73e8;
+  border-left: 4px solid #1976d2;
   padding-left: 0.75rem;
 }
 
 .content p {
-  font-size: 0.95rem;
-  color: #444;
-  line-height: 1.75;
+  font-size: 12pt;
+  color: #333;
+  line-height: 2;
   margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.content .section-divider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 2rem 0;
 }
 
 .week-grid {
@@ -201,6 +164,7 @@ nav .nav-links a.active {
 }
 
 .week-card-body h3 {
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 1rem;
   color: #333;
   margin-bottom: 0.3rem;
@@ -209,22 +173,59 @@ nav .nav-links a.active {
 .week-card-body p {
   font-size: 0.8rem;
   color: #777;
+  text-align: left;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.cat-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.cat-images img {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.page-label {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 0.8rem;
+  color: #999;
+  margin-bottom: 0.4rem;
 }
 
 footer {
   border-top: 1px solid #e0e0e0;
   padding: 1.5rem 2rem;
   text-align: center;
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 0.8rem;
   color: #999;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   nav {
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
+  nav .nav-links a {
+    font-size: 0.75rem;
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
   nav .nav-links {
-    display: none;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  nav {
+    height: auto;
+    padding: 0.5rem;
   }
   .hero h1 {
     font-size: 2rem;
