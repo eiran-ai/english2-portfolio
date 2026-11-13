@@ -199,6 +199,14 @@ nav .nav-links a.active {
   margin-bottom: 0.4rem;
 }
 
+.references p {
+  padding-left: 2rem;
+  text-indent: -2rem;
+  font-size: 11pt;
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+}
+
 footer {
   border-top: 1px solid #e0e0e0;
   padding: 1.5rem 2rem;
