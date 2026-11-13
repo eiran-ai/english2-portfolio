@@ -199,6 +199,37 @@ nav .nav-links a.active {
   margin-bottom: 0.4rem;
 }
 
+.hl-claim { background: #d4edda; padding: 1px 3px; border-radius: 2px; }
+.hl-link { background: #fff3cd; padding: 1px 3px; border-radius: 2px; }
+.hl-evidence { background: #cce5ff; padding: 1px 3px; border-radius: 2px; }
+.hl-reasoning { background: #f8d7da; padding: 1px 3px; border-radius: 2px; }
+.hl-review { background: #e2d5f1; padding: 1px 3px; border-radius: 2px; }
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.legend .swatch {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
 .references p {
   padding-left: 2rem;
   text-indent: -2rem;
