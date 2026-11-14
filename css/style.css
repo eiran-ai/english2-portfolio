@@ -59,6 +59,50 @@ nav .nav-links a.active {
   border-bottom-color: #fff;
 }
 
+nav .nav-links li.dropdown {
+  position: relative;
+}
+
+nav .nav-links li.dropdown > a .arrow {
+  font-size: 0.7em;
+  margin-left: 0.3rem;
+}
+
+nav .nav-links li.dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #1565c0;
+  list-style: none;
+  min-width: 160px;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 200;
+  padding: 0.3rem 0;
+}
+
+nav .nav-links li.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+nav .nav-links .dropdown-menu li {
+  height: auto;
+}
+
+nav .nav-links .dropdown-menu a {
+  padding: 0.5rem 1.2rem;
+  font-size: 0.9rem;
+  height: auto;
+  border-bottom: none;
+  white-space: nowrap;
+}
+
+nav .nav-links .dropdown-menu a:hover {
+  background: rgba(255,255,255,0.1);
+  border-bottom: none;
+}
+
 .hero {
   position: relative;
   height: 360px;
